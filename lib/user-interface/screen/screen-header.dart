@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:website/user-interface/common/common-responsive.dart';
+import 'package:website/user-interface/screen/screen-project-list.dart';
 import 'package:website/utils/utils-clip-path.dart';
 import 'package:website/utils/utils-colors.dart';
 
@@ -7,7 +8,7 @@ class Header extends StatelessWidget {
   //String
   final String _titleRole = "Mobile Engineer";
   final String _descriptionTitle = "Lorem Ipsum  description";
-  final String _projectTitles = 'Project area here';
+  final String _projectTitles = 'PROJECTS';
 
   const Header();
 
@@ -34,7 +35,7 @@ class Header extends StatelessWidget {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30)),
               padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-              color: AppColors.redAccent,
+              color: AppColors.accent,
               child: Text(
                 _projectTitles,
                 style: TextStyle(
@@ -102,29 +103,28 @@ class Header extends StatelessWidget {
                 children: <Widget>[
                   Container(
                     padding: EdgeInsets.all(15),
-                    decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                            colors: <Color>[
-                              AppColors.redAccent,
-                              Colors.red[400]
-                            ],
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight),
-                        shape: BoxShape.circle),
-                    child: Text('AM',
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        )),
+                    // decoration: BoxDecoration(
+                    //     gradient: LinearGradient(
+                    //         colors: <Color>[AppColors.accent, Colors.red[400]],
+                    //         begin: Alignment.topLeft,
+                    //         end: Alignment.bottomRight),
+                    //     shape: BoxShape.circle),
+                    child: Text(
+                      'DM',
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.blackTransparent,
+                      ),
+                    ),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
                       OutlineButton(
                         onPressed: () {},
-                        splashColor: AppColors.redAccent,
-                        highlightedBorderColor: AppColors.redAccent,
+                        splashColor: AppColors.accent,
+                        highlightedBorderColor: AppColors.accent,
                         borderSide: BorderSide(
                           color: Colors.white,
                           width: 2,
@@ -147,8 +147,8 @@ class Header extends StatelessWidget {
                       OutlineButton(
                         onPressed: () =>
                             Navigator.of(context).pushNamed(ProjectList.id),
-                        splashColor: AppColors.redAccent,
-                        highlightedBorderColor: AppColors.redAccent,
+                        splashColor: AppColors.accent,
+                        highlightedBorderColor: AppColors.accent,
                         borderSide: BorderSide(
                           color: Colors.transparent,
                           width: 2,
@@ -171,8 +171,8 @@ class Header extends StatelessWidget {
                       OutlineButton(
                         onPressed: () =>
                             Navigator.of(context).pushNamed(ProjectList.id),
-                        splashColor: AppColors.redAccent,
-                        highlightedBorderColor: AppColors.redAccent,
+                        splashColor: AppColors.accent,
+                        highlightedBorderColor: AppColors.accent,
                         borderSide: BorderSide(
                           color: Colors.transparent,
                           width: 2,
@@ -197,7 +197,7 @@ class Header extends StatelessWidget {
                 height: 100,
               ),
               Text(
-                _title,
+                _titleRole,
                 style: TextStyle(
                     fontSize: 60,
                     fontWeight: FontWeight.bold,
@@ -208,7 +208,7 @@ class Header extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                _description,
+                _descriptionTitle,
                 style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.w300,
@@ -248,21 +248,20 @@ class Header extends StatelessWidget {
                 children: <Widget>[
                   Container(
                     padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                            colors: <Color>[
-                              AppColors.redAccent,
-                              Colors.red[400]
-                            ],
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight),
-                        shape: BoxShape.circle),
-                    child: Text('AM',
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        )),
+                    // decoration: BoxDecoration(
+                    //     gradient: LinearGradient(
+                    //         colors: <Color>[AppColors.accent, Colors.red[400]],
+                    //         begin: Alignment.topLeft,
+                    //         end: Alignment.bottomRight),
+                    //     shape: BoxShape.circle),
+                    child: Text(
+                      'DM',
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.blackTransparent,
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -270,7 +269,7 @@ class Header extends StatelessWidget {
                 height: 50,
               ),
               Text(
-                _title,
+                _titleRole,
                 style: TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
@@ -281,7 +280,7 @@ class Header extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                _description,
+                _descriptionTitle,
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w300,

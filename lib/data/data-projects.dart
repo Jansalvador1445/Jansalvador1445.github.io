@@ -1,7 +1,7 @@
 final List<Project> projects = [
+  // Project(title: '', description: '', tags: [], logo: '', images: [], link: ''),
   Project(title: '', description: '', tags: [], logo: '', images: [], link: ''),
-  Project(title: '', description: '', tags: [], logo: '', images: [], link: ''),
-  Project(title: '', description: '', tags: [], logo: '', images: [], link: ''),
+  // Project(title: '', description: '', tags: [], logo: '', images: [], link: ''),
 ];
 
 class Project {

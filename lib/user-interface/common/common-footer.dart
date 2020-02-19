@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'dart:html' as html;
 import 'package:website/utils/utils-clip-path.dart';
 import 'package:website/utils/utils-colors.dart';
+import 'package:website/data/data-projects.dart' as dataprojects;
+import 'dart:html' as html;
 
 import 'common-responsive.dart';
 
@@ -184,7 +185,7 @@ class Footer extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text(
-          'Abdelouahed Medjoudja . 2019',
+          'Jan Salvador Sebastian - 2020',
           style: TextStyle(color: Colors.white),
         ),
         SizedBox(
@@ -200,7 +201,7 @@ class Footer extends StatelessWidget {
         ),
         InkWell(
           onTap: () =>
-              html.window.open('https://github.com/GeekAbdelouahed', 'Github'),
+              html.window.open('https://github.com/jansalvador1445', 'Github'),
           child: Text(
             'Github',
             style: TextStyle(

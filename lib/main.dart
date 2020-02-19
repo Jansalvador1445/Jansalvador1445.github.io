@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:website/user-interface/screen/screen-home.dart';
+import 'package:website/user-interface/screen/screen-project-list.dart';
+import 'package:website/user-interface/screen/screen-project-preview.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,8 +14,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      routes: {},
-      home: null,
+      routes: {
+        ProjectList.id: (context) => ProjectList(),
+        ProjectPreview.id: (context) => ProjectPreview(),
+      },
+      home: Home(),
     );
   }
 }

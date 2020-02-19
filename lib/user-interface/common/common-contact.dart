@@ -100,7 +100,7 @@ class Contact extends StatelessWidget {
               'SEND',
               style: TextStyle(color: Colors.white),
             ),
-            color: AppColors.redAccent,
+            color: AppColors.accent,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(5))),
           ),

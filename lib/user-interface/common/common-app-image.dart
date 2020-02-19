@@ -16,15 +16,16 @@ class AppImage extends StatelessWidget {
           ),
           actions: <Widget>[
             Align(
-                alignment: Alignment.centerRight,
-                child: RaisedButton(
-                  onPressed: () => Navigator.of(context).pop(),
-                  color: AppColors.redAccent,
-                  child: Text(
-                    'CLOSE',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                )),
+              alignment: Alignment.centerRight,
+              child: RaisedButton(
+                onPressed: () => Navigator.of(context).pop(),
+                color: AppColors.accent,
+                child: Text(
+                  'CLOSE',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
           ],
         );
       },
@@ -34,9 +35,10 @@ class AppImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-        onTap: () => _showDialog(context),
-        child: Image.asset(
-          _path,
-        ));
+      onTap: () => _showDialog(context),
+      child: Image.asset(
+        _path,
+      ),
+    );
   }
 }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:website/user-interface/common/common-project-items.dart';
 import 'package:website/utils/utils-colors.dart';
+import 'package:website/data/data-projects.dart' as dataprojects;
 
 class ProjectList extends StatelessWidget {
   static const String id = "projects";
@@ -9,7 +11,7 @@ class ProjectList extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          backgroundColor: AppColors.redAccent,
+          backgroundColor: AppColors.accent,
           title: Text('Projects'),
         ),
         body: ListView(

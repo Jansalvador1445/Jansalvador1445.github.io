@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  static final blackTransparent = Color(0x99000000);
+  static final blackTransparent = Color(0xFF2c3e50);
   static final purple = Color(0xFF8C43FF);
-  static final redAccent = Color(0xFFFF0044);
+  static final accent = Color(0xFF1abc9c);
 }
