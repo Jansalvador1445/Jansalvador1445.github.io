@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:html' as html;
 
+import 'package:website/user-interface/common/common-responsive.dart';
+
 class Home extends StatefulWidget {
   Home({Key key}) : super(key: key);
 
