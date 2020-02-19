@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 class ResponsiveWidget extends StatelessWidget {
-  final Widget _smallScreen;
-  final Widget _mediumScreen;
-  final Widget _largeScreen;
+  final Widget largeScreen;
+  final Widget mediumScreen;
+  final Widget smallScreen;
 
   const ResponsiveWidget(
-    Key key,
-    @required this._largeScreen,
-    @required this._mediumScreen,
-    @required this._smallScreen,
-  ) : super(key: key);
+      {Key key,
+      @required this.largeScreen,
+      this.mediumScreen,
+      this.smallScreen})
+      : super(key: key);
 
   static bool isSmallScreen(BuildContext context) {
     return MediaQuery.of(context).size.width < 800;
