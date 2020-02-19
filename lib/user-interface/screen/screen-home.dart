@@ -31,8 +31,34 @@ class _HomeState extends State<Home> {
     @override
     Widget build(BuildContext context) {
       return Scaffold(
-        appBar: ResponsiveWidget,
+        appBar:
+            ResponsiveWidget.isSmallScreen(context) ? _drawerWidget() : null,
+        floatingActionButton: FloatingActionButton(
+          onPressed: () => html.window.open(
+              "mailto:jansalvadorsebastian@gmail.com",
+              "Jan Salvador Sebastian"),
+          child: Icon(Icons.email),
+          backgroundColor: Colors.redAccent,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+        ),
+        body: ListView(
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                //Header()
+                // Body()
+                // Footer()
+              ],
+            ),
+          ],
+        ),
       );
     }
   }
+
+  //Drawer
+  Widget _drawerWidget() {}
 }
