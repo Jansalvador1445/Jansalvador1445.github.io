@@ -1,6 +1,13 @@
 final List<Project> projects = [
   // Project(title: '', description: '', tags: [], logo: '', images: [], link: ''),
-  Project(title: '', description: '', tags: [], logo: '', images: [], link: ''),
+  Project(
+    title: 'Flutter ',
+    description: 'Lorem sjdnalsjkndnakndjkanjsdkjankjdsakjsndk',
+    tags: ['safas', 'sadsdsfadsf'],
+    logo: 'asdfasd',
+    images: [],
+    link: '',
+  ),
   // Project(title: '', description: '', tags: [], logo: '', images: [], link: ''),
 ];
 
@@ -12,11 +19,12 @@ class Project {
   final List<String> images;
   final String link;
 
-  Project(
-      {this.title,
-      this.description,
-      this.tags,
-      this.logo,
-      this.images,
-      this.link});
+  Project({
+    this.title,
+    this.description,
+    this.tags,
+    this.logo,
+    this.images,
+    this.link,
+  });
 }

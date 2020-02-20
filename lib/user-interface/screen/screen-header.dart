@@ -6,8 +6,8 @@ import 'package:website/utils/utils-colors.dart';
 
 class Header extends StatelessWidget {
   //String
-  final String _titleRole = "Mobile Engineer";
-  final String _descriptionTitle = "Lorem Ipsum  description";
+  final String _titleRole = "Jan Salvador Sebastian";
+  final String _descriptionTitle = "Mobile Engineer";
   final String _projectTitles = 'PROJECTS';
 
   const Header();
@@ -31,20 +31,22 @@ class Header extends StatelessWidget {
         child: Align(
           alignment: Alignment.bottomCenter,
           child: RaisedButton(
-              onPressed: () => _onClickNeedProject(context),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30)),
-              padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-              color: AppColors.accent,
-              child: Text(
-                _projectTitles,
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w300,
-                  color: Colors.white,
-                  letterSpacing: 1.1,
-                ),
-              )),
+            //onPressed: () {}, //() => _onClickNeedProject(context),
+            disabledColor: AppColors.accent,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+            padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+            color: AppColors.accent,
+            child: Text(
+              _projectTitles,
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w300,
+                color: Colors.white,
+                letterSpacing: 1.1,
+              ),
+            ),
+          ),
         ),
       )
     ]);
