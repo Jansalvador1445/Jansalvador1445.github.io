@@ -122,10 +122,12 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: none !important; }
 
 .site-section {
-  padding: 4.5em 0; }
+  padding: 1.5em 0; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 7em 0; } }
+      /* padding: 7em 0;  */
+    } 
+    }
   .site-section.site-section-sm {
     padding: 4em 0; }
 
